@@ -7,9 +7,27 @@
     <meta name="author" content="@gotoariel">
  
 
+    <title>Stock Data Lookup Demo</title>
+
+    <!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.css" type="text/css" />
+		<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.css" type="text/css" />
+
+    <!-- Custom CSS for navbar-->
+    <style>
+    body {
+      padding-top: 70px;
+    }
+    </style>
+
+	<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.10.min.js"></script>
+	<script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.10.min.js"></script>
+
+	{{ script|safe }}
+	{{ div|safe }}
   </head>
   <body>
-	<p> Flask test </p>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
