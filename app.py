@@ -28,7 +28,7 @@ def index():
         #ticker_feature = request.form['features']
         stock_data = requests.get('https://www.quandl.com/api/v3/datasets/WIKI/%s.json?api_key=Y4tZ_xJ8saiyQVoUEQEP'%ticker_symbol)
         stock_data_dict = stock_data.json()
-        ticker_test = [*stock_data_dict]
+        #ticker_test = [*stock_data_dict]
        # if ticker_test == ['quandl_error']:
           #  return render_template('error.html')
         #else:
