@@ -18,13 +18,13 @@ app = Flask(__name__)
    # return p1
 
 # index page
-@app.route('/index',methods = ['GET','POST'])
+@app.route('/',methods = ['GET','POST'])
 def index():
     if request.method == 'GET':
-        return render_template('figure.html',)
+        return render_template('index.html',)
     else:
-        ticker_symbol = request.form['ticker']
-        return render_template('figure.html',)
+        #ticker_symbol = request.form['ticker']
+        return render_template('index.html',)
         #ticker_feature = request.form['features']
         #stock_data = requests.get('https://www.quandl.com/api/v3/datasets/WIKI/%s.json?api_key=Y4tZ_xJ8saiyQVoUEQEP'%ticker_symbol)
         #stock_data_dict = stock_data.json()
